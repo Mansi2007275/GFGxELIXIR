@@ -103,7 +103,7 @@ const FAQ = () => {
           className="w-full h-full object-cover opacity-25"
           style={{ pointerEvents: "none" }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/80 to-black/90" />
+        <div className="absolute inset-0 bg-linear-to-b from-black/90 via-black/80 to-black/90" />
       </div>
 
       {/* 📘 Content */}

@@ -77,7 +77,7 @@ const About = () => {
       {/* Content (on top of video, aligned right) */}
       <div
         ref={contentRef}
-        className="relative z-10 max-w-xl p-6 md:p-10 mr-10 md:mr-20 shadow-2xl rounded-2xl"
+        className="relative z-10 max-w-xl p-6 md:p-10  shadow-2xl rounded-2xl"
       >
         <CardHeader>
           <CardTitle className="text-4xl md:text-5xl mb-4 font-light tracking-wider">

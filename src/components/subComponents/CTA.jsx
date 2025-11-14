@@ -65,7 +65,7 @@ const CTA = () => {
         className="absolute inset-0 w-full h-full object-cover opacity-60"
         style={{ pointerEvents: "none" }}
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent" />
+      <div className="absolute inset-0 bg-linear-to-t from-black via-black/70 to-transparent" />
 
       {/* ✨ Content */}
       <div
@@ -88,7 +88,7 @@ const CTA = () => {
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
           <Button
             size="lg"
-            className="bg-white text-black hover:bg-gray-200 px-10 py-7 text-lg font-semibold transform hover:scale-105 transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.2)]"
+            className="bg-white text-black hover:bg-gray-200 px-10 py-7 text-lg font-semibold transform hover:scale-105 transition-all duration-300"
           >
             Enlist Now
           </Button>

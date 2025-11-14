@@ -64,9 +64,21 @@ const MissionTimeline = () => {
   }, []);
 
   const events = [
-    { date: "Jan 15", title: "Registration Opens", desc: "Sign up starts now!" },
-    { date: "Feb 1", title: "Deadline Extended", desc: "Last chance to register" },
-    { date: "Feb 15–17", title: "Hackathon Begins", desc: "72 hours of coding" },
+    {
+      date: "Jan 15",
+      title: "Registration Opens",
+      desc: "Sign up starts now!",
+    },
+    {
+      date: "Feb 1",
+      title: "Deadline Extended",
+      desc: "Last chance to register",
+    },
+    {
+      date: "Feb 15–17",
+      title: "Hackathon Begins",
+      desc: "72 hours of coding",
+    },
     { date: "Feb 17", title: "Submissions Due", desc: "Final demos presented" },
     { date: "Feb 18", title: "Results & Awards", desc: "Winners announced" },
   ];
@@ -76,7 +88,7 @@ const MissionTimeline = () => {
       ref={sectionRef}
       className="relative min-h-screen w-full overflow-hidden bg-black text-white py-4"
     >
-      {/* 🎥 Background Video */}
+      
       <div className="absolute inset-0 z-0">
         <video
           ref={videoRef}
@@ -92,7 +104,6 @@ const MissionTimeline = () => {
         <div className="absolute inset-0 bg-black/60" />
       </div>
 
-      {/* 🧭 Foreground */}
       <div className="relative z-20 container mx-auto px-4">
         <div className="text-center mb-10">
           <h2 className="text-4xl md:text-5xl text-white font-light tracking-tight mb-3">
@@ -103,54 +114,74 @@ const MissionTimeline = () => {
           </p>
         </div>
 
-        {/* Timeline */}
         <div className="relative max-w-4xl mx-auto">
-          {/* Central vertical line */}
-          <div className="absolute left-1/2 top-0 h-full w-[2px] bg-white/25 -translate-x-1/2"></div>
+          <div className="hidden md:block">
+            <div className="absolute left-1/2 top-0 h-full w-0.5 bg-white/25 -translate-x-1/2"></div>
 
-          <div className="space-y-1 md:space-y-1">
-            {events.map((event, i) => (
-              <div
-                key={i}
-                ref={(el) => (cardsRef.current[i] = el)}
-                className={`flex items-center relative ${
-                  i % 2 === 0 ? "justify-start" : "justify-end"
-                }`}
-              >
-                {/* Horizontal connector line (from dot to card edge) */}
+            <div className="space-y-1">
+              {events.map((event, i) => (
                 <div
-                  className={`absolute top-1/3 h-[1px] bg-white/30 ${
-                    i % 2 === 0
-                      ? "right-1/2 w-[calc(17%-2rem)]"
-                      : "left-1/2 w-[calc(17%-2rem)]"
-                  }`}
-                ></div>
-
-                {/* Event card */}
-                <div
-                  className={`w-[40%] ${
-                    i % 2 === 0 ? "pr-8 text-right" : "pl-8 text-left"
+                  key={i}
+                  ref={(el) => (cardsRef.current[i] = el)}
+                  className={`flex items-center relative ${
+                    i % 2 === 0 ? "justify-start" : "justify-end"
                   }`}
                 >
-                  <Card className="bg-white/5 backdrop-blur-md border border-white/10 shadow-lg rounded-xl hover:bg-white/10 transition-all duration-500">
-                    <CardHeader className="px-5 py-3 flex flex-col gap-1">
-                      <div className="flex items-center justify-between gap-3">
-                        <CardTitle className="text-base md:text-lg text-white font-light whitespace-nowrap">
-                          {event.title}
-                        </CardTitle>
-                        <Badge className="bg-white text-black text-[0.65rem] font-medium px-2 py-0.5 rounded-full">
-                          {event.date}
-                        </Badge>
-                      </div>
-                      <CardDescription className="text-gray-300 text-xs md:text-sm leading-relaxed mt-1">
-                        {event.desc}
-                      </CardDescription>
-                    </CardHeader>
-                  </Card>
-                </div>
+                  <div
+                    className={`absolute top-1/3 h-px bg-white/30 ${
+                      i % 2 === 0
+                        ? "right-1/2 lg:w-[calc(17%-2rem)] md:w-[calc(17%-1.2rem)]"
+                        : "left-1/2 lg:w-[calc(17%-2rem)] md:w-[calc(17%-1.2rem)]"
+                    }`}
+                  ></div>
 
-                {/* Center Dot */}
-                {/* <div className="absolute left-1/2 top-1/3 -translate-x-1/2 w-3.5 h-3.5 rounded-full bg-white/20 shadow-lg"></div> */}
+                  <div
+                    className={`w-[40%] ${
+                      i % 2 === 0 ? "pr-8 text-right" : "pl-8 text-left"
+                    }`}
+                  >
+                    <Card className="bg-white/5 backdrop-blur-md border border-white/10 shadow-lg rounded-xl hover:bg-white/10 transition-all duration-500 -mb-4">
+                      <CardHeader className="px-4 flex flex-col gap-1">
+                        <div className="flex items-center justify-between gap-3">
+                          <CardTitle className="text-sm md:text-base text-white font-light whitespace-nowrap">
+                            {event.title}
+                          </CardTitle>
+
+                          <Badge className="bg-transparent text-white text-[0.9rem] font-medium px-2 py-0.5 rounded-full">
+                            {event.date}
+                          </Badge>
+                        </div>
+
+                        <CardDescription className="text-gray-300 text-xs md:text-sm leading-snug mt-1">
+                          {event.desc}
+                        </CardDescription>
+                      </CardHeader>
+                    </Card>
+                  </div>
+
+                  <div className="absolute left-1/2 top-7/24 -translate-x-1/2 w-2.5 h-2.5 rounded-full bg-white/20 shadow-lg"></div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="md:hidden space-y-4 -mt-6">
+            {events.map((event, i) => (
+              <div key={i} className="relative">
+                <Card className="bg-white/5 backdrop-blur-md border border-white/10 shadow-lg rounded-xl hover:bg-white/10 transition p-4 -mb-2">
+                  <div className="flex items-center justify-between">
+                    <h3 className="text-white text-sm font-normal">
+                      {event.title}
+                    </h3>
+                    <Badge className="bg-transparent text-white text-xs font-medium px-2 py-0.5 rounded-full">
+                      {event.date}
+                    </Badge>
+                  </div>
+
+                  <p className="text-gray-300 text-xs mt-2 leading-snug">
+                    {event.desc}
+                  </p>
+                </Card>
               </div>
             ))}
           </div>

@@ -4,31 +4,31 @@ import "./globals.css";
 // import AOSProvider from "@/components/aos-provider";
 import GSAPProvider from "@/components/gsap-provider";
 
-const lora = localFont({
-  src: [
-    {
-      path: "../../public/fonts/Cabin/static/Cabin_Condensed-Medium.ttf",
-      weight: "400",
-      style: "normal",
-    },
-    {
-    path: "../../public/fonts/Cabin/Cabin-Italic-VariableFont_wdth,wght.ttf",
-    weight: "400",
-    style: "normal",
-    },
-    {
-    path: "../../public/fonts/Lora/Lora-Italic-VariableFont_wght.ttf",
-    weight: "400",
-    style: "normal",
-    },
-    {
-    path: "../../public/fonts/Noto_Serif/NotoSerif-Italic-VariableFont_wdth,wght.ttf",
-    weight: "400",
-    style: "normal",
-    },
-  ],
-  variable: "--font-lora",
-});
+// const lora = localFont({
+//   src: [
+//     {
+//       path: "../../public/fonts/Cabin/static/Cabin_Condensed-Medium.ttf",
+//       weight: "400",
+//       style: "normal",
+//     },
+//     {
+//     path: "../../public/fonts/Cabin/Cabin-Italic-VariableFont_wdth,wght.ttf",
+//     weight: "400",
+//     style: "normal",
+//     },
+//     {
+//     path: "../../public/fonts/Lora/Lora-Italic-VariableFont_wght.ttf",
+//     weight: "400",
+//     style: "normal",
+//     },
+//     {
+//     path: "../../public/fonts/Noto_Serif/NotoSerif-Italic-VariableFont_wdth,wght.ttf",
+//     weight: "400",
+//     style: "normal",
+//     },
+//   ],
+//   variable: "--font-lora",
+// });
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -50,7 +50,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="dark">
       <body
-        className={`${lora.variable} ${geistSans.variable} ${geistMono.variable} antialiased `}
+        className={` ${geistSans.variable} ${geistMono.variable} antialiased `}
       >
         {/* <AOSProvider> */}
         <GSAPProvider>{children}</GSAPProvider>
