@@ -45,7 +45,7 @@ const MissionTimeline = () => {
 
   const data = [
     {
-      title: "Jan 15",
+      title: "15 Feb - 15 Mar ",
       content: (
         <div>
           <p className="mb-4 text-xs font-normal text-white/80 md:text-sm">
@@ -57,34 +57,34 @@ const MissionTimeline = () => {
         </div>
       ),
     },
+    // {
+    //   title: "Feb 1",
+    //   content: (
+    //     <div>
+    //       <p className="mb-4 text-xs font-normal text-white/80 md:text-sm">
+    //         Deadline Extended
+    //       </p>
+    //       <p className="text-xs text-white/60 md:text-sm">
+    //         Last chance to register! Don't miss this opportunity.
+    //       </p>
+    //     </div>
+    //   ),
+    // },
     {
-      title: "Feb 1",
-      content: (
-        <div>
-          <p className="mb-4 text-xs font-normal text-white/80 md:text-sm">
-            Deadline Extended
-          </p>
-          <p className="text-xs text-white/60 md:text-sm">
-            Last chance to register! Don't miss this opportunity.
-          </p>
-        </div>
-      ),
-    },
-    {
-      title: "Feb 15–17",
+      title: "28 Mar",
       content: (
         <div>
           <p className="mb-4 text-xs font-normal text-white/80 md:text-sm">
             Hackathon Begins
           </p>
           <p className="text-xs text-white/60 md:text-sm">
-            72 hours of coding, innovation, and collaboration starts now!
+            Coding, innovation, and collaboration starts now!
           </p>
         </div>
       ),
     },
     {
-      title: "Feb 17",
+      title: "29 Mar",
       content: (
         <div>
           <p className="mb-4 text-xs font-normal text-white/80 md:text-sm">
@@ -97,7 +97,7 @@ const MissionTimeline = () => {
       ),
     },
     {
-      title: "Feb 18",
+      title: "29 Mar",
       content: (
         <div>
           <p className="mb-4 text-xs font-normal text-white/80 md:text-sm">
