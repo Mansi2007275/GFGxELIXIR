@@ -73,7 +73,7 @@ const About = () => {
             {aboutData.map((item, idx) => (
               <div
                 key={idx}
-                className="flex items-start gap-3 bg-white/5 p-3 rounded-md border border-white/10 hover:bg-white/10 transition-all duration-300"
+                className="flex items-center gap-3 bg-white/5 p-3 rounded-md border border-white/10 hover:bg-white/10 transition-all duration-300"
               >
                 {item.icon}
                 <div>

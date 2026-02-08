@@ -3,7 +3,7 @@
 import { cloneElement, useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Brain, Link, DollarSign } from "lucide-react";
+import { Brain, Link, DollarSign, Lightbulb } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -28,6 +28,13 @@ const cardData = [
     desc: "Financial Orbit",
     number: "03",
     tagline: "Revolutionize global finance",
+  },
+  {
+    icon: <Lightbulb />,
+    title: "Open Innovation",
+    desc: "Creative Nebula",
+    number: "04",
+    tagline: "Innovate without boundaries",
   },
 ];
 
@@ -130,7 +137,7 @@ const Cards = () => {
             >
               <div
                 className={`
-                  relative overflow-hidden h-full
+                  relative overflow-hidden h-[300px]
                   rounded-3xl
                   bg-gradient-to-br from-white/[0.08] to-white/[0.02]
                   backdrop-blur-xl
@@ -164,7 +171,7 @@ const Cards = () => {
 
                   {/* Track Description Badge */}
                   <div className="inline-flex items-center mb-3 px-3 py-1 rounded-full bg-white/5 border border-white/10">
-                    <span className="text-xs text-white/40 uppercase tracking-wider">{item.desc}</span>
+                    <span className="text-xs text-white/40 uppercase tracking-wider whitespace-nowrap">{item.desc}</span>
                   </div>
 
                   {/* Title */}
@@ -173,7 +180,7 @@ const Cards = () => {
                   </h3>
 
                   {/* Tagline */}
-                  <p className="text-white/40 text-sm max-w-[200px] font-light opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+                  <p className="text-white/40 text-sm font-light opacity-0 group-hover:opacity-100 transition-all duration-500 h-10 overflow-hidden">
                     {item.tagline}
                   </p>
                 </div>
@@ -191,7 +198,7 @@ const Cards = () => {
         <div className="mt-20 flex items-center justify-center gap-6">
           <div className="w-20 h-px bg-gradient-to-r from-transparent to-white/20" />
           <p className="text-white/20 text-xs tracking-[0.4em] uppercase font-light">
-            3 Dimensions • Infinite Universe
+            4 Dimensions • Infinite Universe
           </p>
           <div className="w-20 h-px bg-gradient-to-l from-transparent to-white/20" />
         </div>
