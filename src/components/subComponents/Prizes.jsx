@@ -22,7 +22,7 @@ const Prizes = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative py-24 bg-black text-white overflow-hidden"
+      className="relative py-12 sm:py-24 bg-black text-white overflow-hidden"
     >
       <div className="absolute inset-0">
         <video
@@ -37,9 +37,9 @@ const Prizes = () => {
         <div className="absolute inset-0 bg-linear-to-b from-black/80 via-black/60 to-black" />
       </div>
 
-      <div className="relative z-10 container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-light tracking-tight mb-4">
+        <div className="relative z-10 container mx-auto px-3 sm:px-4">
+        <div className="text-center mb-10 sm:mb-16">
+          <h2 className="text-3xl sm:text-5xl font-light tracking-tight mb-4">
             Prize Pool
           </h2>
           <p className="text-base sm:text-lg text-gray-400">

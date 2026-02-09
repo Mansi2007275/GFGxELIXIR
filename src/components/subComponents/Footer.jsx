@@ -3,15 +3,15 @@ import { Calendar, Clock, Github, Linkedin, Mail, Twitter } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="relative bg-linear-to-b from-black via-[#0a0a0a] to-black border-t border-white/10 py-16">
-      <div className="container mx-auto px-6">
-        <div className="grid md:grid-cols-4 gap-10 mb-12">
+    <footer className="relative bg-linear-to-b from-black via-[#0a0a0a] to-black border-t border-white/10 py-10 sm:py-16">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-10 mb-10 sm:mb-12">
           <div>
-            <h3 className="text-2xl mb-3 text-white flex items-center gap-2 font-light tracking-wide">
-              <span className="text-3xl animate-pulse">⚔️</span>
+            <h3 className="text-xl sm:text-2xl mb-3 text-white flex items-center gap-2 font-light tracking-wide">
+              <span className="text-2xl sm:text-3xl animate-pulse">⚔️</span>
               Stellaris
             </h3>
-            <p className="text-gray-400 leading-relaxed max-w-xs">
+            <p className="text-gray-400 leading-relaxed max-w-xs text-sm sm:text-base">
               <span className="text-white font-medium">Give Your Heart.</span>{" "}
               Battling titans. Building the future with code and courage.
             </p>
@@ -56,8 +56,8 @@ const Footer = () => {
               Contact
             </h4>
             <div className="space-y-3 text-gray-400">
-              <p className="flex items-center gap-2">
-                <Mail className="w-4 h-4 text-white/70" />
+              <p className="flex items-center gap-2 break-all text-sm sm:text-base">
+                <Mail className="w-4 h-4 text-white/70 shrink-0" />
                 hackathon@gfgxelixir.com
               </p>
               <div className="flex gap-5 mt-4">

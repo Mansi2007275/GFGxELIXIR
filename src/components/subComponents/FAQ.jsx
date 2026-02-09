@@ -31,7 +31,7 @@ const FAQ = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative py-24 text-white overflow-hidden"
+      className="relative py-12 sm:py-24 text-white overflow-hidden"
     >
       <div className="absolute inset-0 z-0">
         <video
@@ -47,12 +47,12 @@ const FAQ = () => {
         <div className="absolute inset-0 bg-linear-to-b from-black/90 via-black/80 to-black/90" />
       </div>
 
-      <div className="relative z-10 container mx-auto px-4 max-w-3xl">
-        <div className="text-center mb-16">
-          <h2 className="text-5xl font-light tracking-tight mb-3">
+      <div className="relative z-10 container mx-auto px-3 sm:px-4 max-w-3xl">
+        <div className="text-center mb-10 sm:mb-16">
+          <h2 className="text-3xl sm:text-5xl font-light tracking-tight mb-3">
             Frequently Asked Questions
           </h2>
-          <p className="text-lg text-gray-400">Everything you need to know</p>
+          <p className="text-base sm:text-lg text-gray-400">Everything you need to know</p>
         </div>
 
         <Accordion
@@ -67,10 +67,10 @@ const FAQ = () => {
               value={`item-${i}`}
               className="bg-white/5 backdrop-blur-md border border-white/10 rounded-lg hover:bg-white/10 transition-all duration-300"
             >
-              <AccordionTrigger className="text-left font-normal text-white px-6 py-4 hover:text-gray-300 text-lg">
+              <AccordionTrigger className="text-left font-normal text-white px-3 sm:px-6 py-3 sm:py-4 hover:text-gray-300 text-base sm:text-lg">
                 {faq.q}
               </AccordionTrigger>
-              <AccordionContent className="text-gray-400 px-6 pb-4 text-sm leading-relaxed">
+              <AccordionContent className="text-gray-400 px-3 sm:px-6 pb-3 sm:pb-4 text-xs sm:text-sm leading-relaxed">
                 {faq.a}
               </AccordionContent>
             </AccordionItem>

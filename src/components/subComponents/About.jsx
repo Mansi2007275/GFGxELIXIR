@@ -18,7 +18,7 @@ const About = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative h-screen w-full overflow-hidden  text-white flex items-center justify-end"
+      className="relative min-h-screen w-full overflow-hidden text-white flex items-center justify-center sm:justify-end"
     >
       <video
         ref={videoRef}

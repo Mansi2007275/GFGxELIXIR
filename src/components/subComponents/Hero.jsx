@@ -38,33 +38,33 @@ const Hero = () => {
         ref={contentRef}
         className="absolute inset-0 flex flex-col items-center justify-center text-center z-10 px-4 space-y-5"
       >
-        <Badge className="px-4 py-2 text-xs sm:text-sm bg-white/10 backdrop-blur-sm border-white/20 text-white shadow-lg">
+        <Badge className="px-3 py-1.5 text-[10px] sm:text-sm bg-white/10 backdrop-blur-sm border-white/20 text-white shadow-lg max-w-[90vw] text-center leading-snug">
           COMMAND BRANCH: GEEKSFORGEEKS X ELIXIR
         </Badge>
 
-        <h1 className="text-4xl sm:text-6xl md:text-8xl font-extralight tracking-tight leading-[1.1]">
+        <h1 className="text-3xl sm:text-6xl md:text-8xl font-extralight tracking-tight leading-[1.1]">
           BREAK THROUGH
         </h1>
 
-        <h2 className="text-xl sm:text-3xl md:text-5xl text-white/90 tracking-wide leading-tight">
+        <h2 className="text-lg sm:text-3xl md:text-5xl text-white/90 tracking-wide leading-tight">
           THE WALLS OF INNOVATION
         </h2>
 
-        <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mt-4 w-full sm:w-auto px-2">
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-6 mt-4 w-full sm:w-auto px-2">
           <Button
             size="lg"
-            className="bg-black/80 text-white hover:bg-black px-6 sm:px-10 py-5 sm:py-7 text-base sm:text-lg font-semibold tracking-wide"
+            className="bg-black/80 text-white hover:bg-black px-4 sm:px-10 py-4 sm:py-7 text-sm sm:text-lg font-semibold tracking-wide w-full sm:w-auto"
           >
-            <Target className="mr-2 w-4 h-4 sm:w-5 sm:h-5" />
+            <Target className="mr-2 w-4 h-4 sm:w-5 sm:h-5 shrink-0" />
             Join The Scout Regiment
           </Button>
 
           <Button
             size="lg"
             variant="outline"
-            className="border-2 border-white text-white hover:bg-white hover:text-black px-6 sm:px-10 py-5 sm:py-6 text-base sm:text-lg font-semibold tracking-wide"
+            className="border-2 border-white text-white hover:bg-white hover:text-black px-4 sm:px-10 py-4 sm:py-6 text-sm sm:text-lg font-semibold tracking-wide w-full sm:w-auto"
           >
-            <Code className="mr-2 w-4 h-4 sm:w-5 sm:h-5" />
+            <Code className="mr-2 w-4 h-4 sm:w-5 sm:h-5 shrink-0" />
             Mission Briefing
           </Button>
         </div>
