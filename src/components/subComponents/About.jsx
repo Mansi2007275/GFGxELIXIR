@@ -36,17 +36,17 @@ const About = () => {
 
       <div
         ref={contentRef}
-        className="relative z-10 max-w-xl p-6 md:p-10  shadow-2xl rounded-2xl"
+        className="relative z-10 max-w-xl p-4 xs:p-5 sm:p-6 md:p-10 shadow-2xl rounded-2xl mx-2 xs:mx-3 sm:mx-0"
       >
-        <CardHeader>
-          <CardTitle className="text-4xl md:text-5xl mb-4 font-light tracking-wider">
+        <CardHeader className="px-0 sm:px-6">
+          <CardTitle className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl mb-3 sm:mb-4 font-light tracking-wider">
             Mission Briefing
           </CardTitle>
-          <Separator className="bg-white/20 mb-4" />
+          <Separator className="bg-white/20 mb-3 sm:mb-4" />
         </CardHeader>
 
-        <CardContent className="space-y-6 text-gray-300">
-          <p className="text-base md:text-lg leading-relaxed">
+        <CardContent className="space-y-4 sm:space-y-6 text-gray-300 px-0 sm:px-6">
+          <p className="text-sm xs:text-base md:text-lg leading-relaxed">
             <span className="text-white font-semibold">
               CLASSIFIED: SCOUT REGIMENT HEADQUARTERS
             </span>
@@ -60,7 +60,7 @@ const About = () => {
             72-hour operation to push past the limits of innovation.
           </p>
 
-          <p className="text-base md:text-lg leading-relaxed">
+          <p className="text-sm xs:text-base md:text-lg leading-relaxed">
             This is{" "}
             <span className="text-white font-semibold">
               humanity’s last stand
@@ -69,18 +69,18 @@ const About = () => {
             Developers unite, adapt, and rise beyond all boundaries.
           </p>
 
-          <div className="grid grid-cols-2 gap-4 text-left">
+          <div className="grid grid-cols-1 xs:grid-cols-2 gap-3 sm:gap-4 text-left">
             {aboutData.map((item, idx) => (
               <div
                 key={idx}
-                className="flex items-start gap-3 bg-white/5 p-3 rounded-md border border-white/10 hover:bg-white/10 transition-all duration-300"
+                className="flex items-start gap-2 xs:gap-3 bg-white/5 p-2.5 xs:p-3 rounded-md border border-white/10 hover:bg-white/10 transition-all duration-300"
               >
                 {item.icon}
                 <div>
-                  <h3 className="font-semibold text-white text-lg">
+                  <h3 className="font-semibold text-white text-base xs:text-lg">
                     {item.title}
                   </h3>
-                  <p className="text-gray-400 text-sm">{item.text}</p>
+                  <p className="text-gray-400 text-xs xs:text-sm">{item.text}</p>
                 </div>
               </div>
             ))}

@@ -25,22 +25,22 @@ const Cards = () => {
         <div className="absolute inset-0 bg-black/60" />
       </div>
 
-      <div className="relative z-20 container mx-auto px-3 sm:px-4 py-10 sm:py-16">
-        <div className="text-center mb-8 sm:mb-10">
-          <p className="text-xs sm:text-sm text-gray-400 uppercase tracking-widest mb-1">
+      <div className="relative z-20 container mx-auto px-2 xs:px-3 sm:px-4 py-8 sm:py-16">
+        <div className="text-center mb-6 sm:mb-10">
+          <p className="text-[10px] xs:text-xs sm:text-sm text-gray-400 uppercase tracking-widest mb-1">
             STRATEGIC OPERATIONS CLASSIFICATION
           </p>
 
-          <h2 className="text-3xl sm:text-4xl md:text-6xl font-light tracking-tight mb-3">
+          <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-6xl font-light tracking-tight mb-2 sm:mb-3">
             Battle Fronts
           </h2>
 
-          <p className="text-base sm:text-lg md:text-xl text-gray-300">
+          <p className="text-sm xs:text-base sm:text-lg md:text-xl text-gray-300">
             Select your division and deploy your expertise
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8 pb-10 sm:pb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 xs:gap-4 sm:gap-8 pb-8 sm:pb-16">
           {cardData.map((item, i) => (
             <Card
               key={i}
@@ -53,12 +53,12 @@ const Cards = () => {
                 hover:bg-white/10 hover:scale-[1.03]
               "
             >
-              <CardHeader className="relative pt-4 pb-2 px-3 sm:px-4">
-                <CardTitle className="text-lg sm:text-xl md:text-2xl font-semibold text-white pr-12 sm:pr-14">
+              <CardHeader className="relative pt-3 xs:pt-4 pb-2 px-2.5 xs:px-3 sm:px-4">
+                <CardTitle className="text-base xs:text-lg sm:text-xl md:text-2xl font-semibold text-white pr-10 xs:pr-12 sm:pr-14">
                   {item.title}
                 </CardTitle>
 
-                <CardDescription className="text-gray-400 text-[11px] sm:text-xs md:text-sm uppercase tracking-wider mt-2">
+                <CardDescription className="text-gray-400 text-[10px] xs:text-[11px] sm:text-xs md:text-sm uppercase tracking-wider mt-1.5 xs:mt-2">
                   {item.desc}
                 </CardDescription>
 
@@ -75,8 +75,8 @@ const Cards = () => {
                 </div>
               </CardHeader>
 
-              <CardContent className="px-3 sm:px-4 pb-5 sm:pb-6">
-                <ul className="space-y-2 sm:space-y-3 text-gray-300 text-xs sm:text-sm">
+              <CardContent className="px-2.5 xs:px-3 sm:px-4 pb-4 sm:pb-6">
+                <ul className="space-y-1.5 xs:space-y-2 sm:space-y-3 text-gray-300 text-[11px] xs:text-xs sm:text-sm">
                   {item.points.map((p, idx) => (
                     <li key={idx} className="flex items-center gap-2">
                       <span className="text-white">▸</span> {p}

@@ -37,17 +37,17 @@ const Prizes = () => {
         <div className="absolute inset-0 bg-linear-to-b from-black/80 via-black/60 to-black" />
       </div>
 
-        <div className="relative z-10 container mx-auto px-3 sm:px-4">
-        <div className="text-center mb-10 sm:mb-16">
-          <h2 className="text-3xl sm:text-5xl font-light tracking-tight mb-4">
+        <div className="relative z-10 container mx-auto px-2 xs:px-3 sm:px-4">
+        <div className="text-center mb-8 sm:mb-16">
+          <h2 className="text-2xl xs:text-3xl sm:text-5xl font-light tracking-tight mb-3 sm:mb-4">
             Prize Pool
           </h2>
-          <p className="text-base sm:text-lg text-gray-400">
+          <p className="text-sm xs:text-base sm:text-lg text-gray-400">
             The spoils of victory await the bravest coders
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 xs:gap-6 sm:gap-8 max-w-6xl mx-auto mb-8 sm:mb-12">
           {[
             {
               emoji: "🥇",
@@ -77,14 +77,14 @@ const Prizes = () => {
                 w-full
               "
             >
-              <CardHeader className="text-center py-6 sm:py-8">
-                <div className="text-4xl sm:text-5xl md:text-6xl mb-3">{p.emoji}</div>
+              <CardHeader className="text-center py-4 xs:py-6 sm:py-8">
+                <div className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl mb-2 xs:mb-3">{p.emoji}</div>
 
-                <CardTitle className="text-xl sm:text-2xl md:text-3xl text-white mb-1 sm:mb-2">
+                <CardTitle className="text-lg xs:text-xl sm:text-2xl md:text-3xl text-white mb-1 sm:mb-2">
                   {p.place}
                 </CardTitle>
 
-                <div className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white mt-1 sm:mt-2">
+                <div className="text-xl xs:text-2xl sm:text-3xl md:text-4xl font-semibold text-white mt-1 sm:mt-2">
                   {p.amount}
                 </div>
               </CardHeader>

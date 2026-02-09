@@ -4,6 +4,7 @@
 @import "shadcn/tailwind.css";
 
 @custom-variant dark (&:is(.dark *));
+@custom-variant xs (@media (width >= 400px));
 
 @theme inline {
   --color-background: var(--background);
@@ -134,5 +135,9 @@
   }
   body {
     @apply bg-background text-foreground;
+    overflow-x: hidden;
+  }
+  html {
+    overflow-x: hidden;
   }
 }

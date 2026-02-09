@@ -3,15 +3,15 @@ import { Calendar, Clock, Github, Linkedin, Mail, Twitter } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="relative bg-linear-to-b from-black via-[#0a0a0a] to-black border-t border-white/10 py-10 sm:py-16">
-      <div className="container mx-auto px-4 sm:px-6">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-10 mb-10 sm:mb-12">
+    <footer className="relative bg-linear-to-b from-black via-[#0a0a0a] to-black border-t border-white/10 py-8 sm:py-16">
+      <div className="container mx-auto px-3 xs:px-4 sm:px-6">
+        <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-4 gap-6 xs:gap-8 sm:gap-10 mb-8 sm:mb-12">
           <div>
-            <h3 className="text-xl sm:text-2xl mb-3 text-white flex items-center gap-2 font-light tracking-wide">
-              <span className="text-2xl sm:text-3xl animate-pulse">⚔️</span>
+            <h3 className="text-lg xs:text-xl sm:text-2xl mb-3 text-white flex items-center gap-2 font-light tracking-wide">
+              <span className="text-xl xs:text-2xl sm:text-3xl animate-pulse">⚔️</span>
               Stellaris
             </h3>
-            <p className="text-gray-400 leading-relaxed max-w-xs text-sm sm:text-base">
+            <p className="text-gray-400 leading-relaxed max-w-xs text-xs xs:text-sm sm:text-base">
               <span className="text-white font-medium">Give Your Heart.</span>{" "}
               Battling titans. Building the future with code and courage.
             </p>
@@ -56,9 +56,9 @@ const Footer = () => {
               Contact
             </h4>
             <div className="space-y-3 text-gray-400">
-              <p className="flex items-center gap-2 break-all text-sm sm:text-base">
+              <p className="flex items-center gap-2 text-xs xs:text-sm sm:text-base">
                 <Mail className="w-4 h-4 text-white/70 shrink-0" />
-                hackathon@gfgxelixir.com
+                <span className="break-all">hackathon@gfgxelixir.com</span>
               </p>
               <div className="flex gap-5 mt-4">
                 {[
@@ -82,12 +82,12 @@ const Footer = () => {
         <Separator className="bg-white/10 mb-8" />
 
         <div className="text-center space-y-2">
-          <p className="text-gray-500 text-sm tracking-wide">
+          <p className="text-gray-500 text-[10px] xs:text-xs sm:text-sm tracking-wide">
             &copy; 2025{" "}
             <span className="text-white">GfG × Elixir Tech Community</span>. All
             rights reserved.
           </p>
-          <p className="text-gray-600 text-xs">
+          <p className="text-gray-600 text-[10px] xs:text-xs">
             Built with ❤️ for developers by developers.
           </p>
         </div>

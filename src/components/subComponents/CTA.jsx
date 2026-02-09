@@ -64,10 +64,10 @@ const CTA = () => {
 
       <div
         ref={contentRef}
-        className="relative z-10 text-center max-w-3xl mx-auto px-4 sm:px-6"
+        className="relative z-10 text-center max-w-3xl mx-auto px-3 xs:px-4 sm:px-6"
       >
-        <div className="mb-6 flex justify-center">
-          <Sparkles className="w-10 h-10 text-white animate-pulse" />
+        <div className="mb-4 sm:mb-6 flex justify-center">
+          <Sparkles className="w-8 h-8 sm:w-10 sm:h-10 text-white animate-pulse" />
         </div>
 
         <h2 className="text-5xl md:text-7xl font-light tracking-tight mb-4 leading-tight">

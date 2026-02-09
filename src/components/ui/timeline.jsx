@@ -46,29 +46,29 @@ export const Timeline = ({ data }) => {
     <div
       className="w-full bg-transparent font-sans md:px-10"
       ref={containerRef}>
-      <div className="max-w-7xl mx-auto py-12 sm:py-20 px-4 md:px-8 lg:px-10">
-        <h2 className="text-2xl sm:text-3xl md:text-5xl mb-4 text-white max-w-4xl font-bold">
+      <div className="max-w-7xl mx-auto py-10 sm:py-20 px-3 xs:px-4 md:px-8 lg:px-10">
+        <h2 className="text-xl xs:text-2xl sm:text-3xl md:text-5xl mb-3 sm:mb-4 text-white max-w-4xl font-bold">
           Mission Timeline
         </h2>
-        <p className="text-neutral-400 text-xs sm:text-sm md:text-base max-w-sm">
+        <p className="text-neutral-400 text-[11px] xs:text-xs sm:text-sm md:text-base max-w-sm">
           The Survey Corps battle plans and key milestones.
         </p>
       </div>
 
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
         {data.map((item, index) => (
-          <div key={index} className="flex justify-start pt-8 sm:pt-10 md:pt-40 md:gap-10">
+          <div key={index} className="flex justify-start pt-6 xs:pt-8 sm:pt-10 md:pt-40 md:gap-10">
             <div className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">
-              <div className="h-8 w-8 sm:h-10 sm:w-10 absolute left-3 md:left-3 rounded-full bg-black dark:bg-white flex items-center justify-center">
-                <div className="h-3 w-3 sm:h-4 sm:w-4 rounded-full bg-neutral-800 dark:bg-neutral-200 border border-neutral-700 dark:border-neutral-300 p-1.5 sm:p-2" />
+              <div className="h-6 w-6 xs:h-8 xs:w-8 sm:h-10 sm:w-10 absolute left-3 md:left-3 rounded-full bg-black dark:bg-white flex items-center justify-center">
+                <div className="h-2.5 w-2.5 xs:h-3 xs:w-3 sm:h-4 sm:w-4 rounded-full bg-neutral-800 dark:bg-neutral-200 border border-neutral-700 dark:border-neutral-300 p-1 xs:p-1.5 sm:p-2" />
               </div>
               <h3 className="hidden md:block text-xl md:pl-20 md:text-5xl font-bold text-neutral-500 ">
                 {item.title}
               </h3>
             </div>
 
-            <div className="relative pl-14 sm:pl-20 pr-3 sm:pr-4 md:pl-4 w-full">
-              <h3 className="md:hidden block text-lg sm:text-2xl mb-3 sm:mb-4 text-left font-bold text-neutral-500">
+            <div className="relative pl-12 xs:pl-14 sm:pl-20 pr-2 xs:pr-3 sm:pr-4 md:pl-4 w-full">
+              <h3 className="md:hidden block text-base xs:text-lg sm:text-2xl mb-2 xs:mb-3 sm:mb-4 text-left font-bold text-neutral-500">
                 {item.title}
               </h3>
               {item.content}
