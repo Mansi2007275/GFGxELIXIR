@@ -8,6 +8,8 @@ import FAQ from "@/components/subComponents/FAQ";
 import CTA from "@/components/subComponents/CTA";
 import Footer from "@/components/subComponents/Footer";
 import MissionTimeline from "@/components/subComponents/MissionTimeline";
+import SmallSponsor from "@/components/subComponents/SmallSponsor";
+// import BigSponsor from "@/components/subComponents/BigSponsor";
 
 export default function Home() {
   return (
@@ -26,6 +28,11 @@ export default function Home() {
 
       <section id="section" className="relative z-10">
         <MissionTimeline />
+      </section>
+
+      <section id="section" className="relative z-10">
+        <SmallSponsor />
+        {/* <BigSponsor /> */}
       </section>
 
       <section id="prizes" className="relative z-10">
