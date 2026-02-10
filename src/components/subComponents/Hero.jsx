@@ -3,6 +3,7 @@ import { Button } from "../ui/button";
 import { Badge } from "../ui/badge";
 import { Code, Target } from "lucide-react";
 import { animatePinnedSection, cleanupScrollTriggers } from "@/lib/gsap-utils";
+import CountdownTimer from "./CountdownTimer";
 
 const Hero = () => {
   const sectionRef = useRef(null);
@@ -62,12 +63,16 @@ const Hero = () => {
           <Button
             size="lg"
             variant="outline"
-            className="border-2 border-white text-white hover:bg-white hover:text-black px-6 sm:px-10 py-5 sm:py-6 text-base sm:text-lg font-semibold tracking-wide"
+            className="border-2 border-white text-white hover:bg-white px-6 sm:px-10 py-5 sm:py-6 text-base sm:text-lg font-semibold tracking-wide"
           >
             <Code className="mr-2 w-4 h-4 sm:w-5 sm:h-5" />
             Mission Briefing
           </Button>
         </div>
+
+        <div className="w-full max-w-4xl mt-10">
+      <CountdownTimer targetDate="2026-03-28T11:00:00" />
+      </div>
       </div>
     </section>
   );
