@@ -36,16 +36,16 @@ const About = () => {
 
       <div
         ref={contentRef}
-        className="relative z-10 max-w-xl p-6 md:p-10  shadow-2xl rounded-2xl"
+        className="relative z-10 max-w-xl p-4 sm:p-10 shadow-2xl rounded-2xl"
       >
-        <CardHeader>
-          <CardTitle className="text-4xl md:text-5xl mb-4 font-light tracking-wider">
+        <CardHeader className="p-0 mb-4 text-center sm:text-left">
+          <CardTitle className="text-3xl sm:text-5xl mb-3 font-light tracking-wider">
             Mission Briefing
           </CardTitle>
-          <Separator className="bg-white/20 mb-4" />
+          <Separator className="bg-white/20" />
         </CardHeader>
 
-        <CardContent className="space-y-6 text-gray-300">
+        <CardContent className="p-0 space-y-5 text-gray-300">
           <p className="text-base md:text-lg leading-relaxed">
             <span className="text-white font-semibold">
               CLASSIFIED: SCOUT REGIMENT HEADQUARTERS
@@ -69,7 +69,7 @@ const About = () => {
             Developers unite, adapt, and rise beyond all boundaries.
           </p>
 
-          <div className="grid grid-cols-2 gap-4 text-left">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 text-left">
             {aboutData.map((item, idx) => (
               <div
                 key={idx}

@@ -22,7 +22,7 @@ const Prizes = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative py-12 sm:py-24 bg-black text-white overflow-hidden"
+      className="relative py-8 sm:py-24 bg-black text-white overflow-hidden"
     >
       <div className="absolute inset-0">
         <video
@@ -37,12 +37,12 @@ const Prizes = () => {
         <div className="absolute inset-0 bg-linear-to-b from-black/80 via-black/60 to-black" />
       </div>
 
-        <div className="relative z-10 container mx-auto px-3 sm:px-4">
-        <div className="text-center mb-10 sm:mb-16">
-          <h2 className="text-3xl sm:text-5xl font-light tracking-tight mb-4">
+      <div className="relative z-10 container mx-auto px-3 sm:px-4">
+        <div className="text-center mb-8 sm:mb-16">
+          <h2 className="text-2xl sm:text-5xl font-light tracking-tight mb-3">
             Prize Pool
           </h2>
-          <p className="text-base sm:text-lg text-gray-400">
+          <p className="text-sm sm:text-lg text-gray-400">
             The spoils of victory await the bravest coders
           </p>
         </div>
@@ -77,14 +77,14 @@ const Prizes = () => {
                 w-full
               "
             >
-              <CardHeader className="text-center py-6 sm:py-8">
-                <div className="text-4xl sm:text-5xl md:text-6xl mb-3">{p.emoji}</div>
+              <CardHeader className="text-center py-4 sm:py-8">
+                <div className="text-3xl sm:text-5xl md:text-6xl mb-2">{p.emoji}</div>
 
-                <CardTitle className="text-xl sm:text-2xl md:text-3xl text-white mb-1 sm:mb-2">
+                <CardTitle className="text-lg sm:text-2xl md:text-3xl text-white mb-1">
                   {p.place}
                 </CardTitle>
 
-                <div className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white mt-1 sm:mt-2">
+                <div className="text-xl sm:text-3xl md:text-4xl font-semibold text-white mt-1">
                   {p.amount}
                 </div>
               </CardHeader>

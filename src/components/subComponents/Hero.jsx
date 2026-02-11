@@ -42,29 +42,29 @@ const Hero = () => {
           COMMAND BRANCH: GEEKSFORGEEKS X ELIXIR
         </Badge>
 
-        <h1 className="text-3xl sm:text-6xl md:text-8xl font-extralight tracking-tight leading-[1.1]">
+        <h1 className="text-2xl sm:text-6xl md:text-8xl font-extralight tracking-tight leading-[1.1]">
           BREAK THROUGH
         </h1>
 
-        <h2 className="text-lg sm:text-3xl md:text-5xl text-white/90 tracking-wide leading-tight">
+        <h2 className="text-base sm:text-3xl md:text-5xl text-white/90 tracking-wide leading-tight">
           THE WALLS OF INNOVATION
         </h2>
 
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-6 mt-4 w-full sm:w-auto px-2">
           <Button
             size="lg"
-            className="bg-black/80 text-white hover:bg-black px-4 sm:px-10 py-4 sm:py-7 text-sm sm:text-lg font-semibold tracking-wide w-full sm:w-auto"
+            className="bg-black/80 text-white hover:bg-black px-3 sm:px-10 py-3 sm:py-7 text-xs sm:text-lg font-semibold tracking-wide w-full sm:w-auto"
           >
-            <Target className="mr-2 w-4 h-4 sm:w-5 sm:h-5 shrink-0" />
+            <Target className="mr-2 w-3 h-3 sm:w-5 sm:h-5 shrink-0" />
             Join The Scout Regiment
           </Button>
 
           <Button
             size="lg"
             variant="outline"
-            className="border-2 border-white text-white hover:bg-white hover:text-black px-4 sm:px-10 py-4 sm:py-6 text-sm sm:text-lg font-semibold tracking-wide w-full sm:w-auto"
+            className="border-2 border-white text-white hover:bg-white hover:text-black px-3 sm:px-10 py-3 sm:py-6 text-xs sm:text-lg font-semibold tracking-wide w-full sm:w-auto"
           >
-            <Code className="mr-2 w-4 h-4 sm:w-5 sm:h-5 shrink-0" />
+            <Code className="mr-2 w-3 h-3 sm:w-5 sm:h-5 shrink-0" />
             Mission Briefing
           </Button>
         </div>

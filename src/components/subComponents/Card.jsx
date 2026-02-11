@@ -31,11 +31,11 @@ const Cards = () => {
             STRATEGIC OPERATIONS CLASSIFICATION
           </p>
 
-          <h2 className="text-3xl sm:text-4xl md:text-6xl font-light tracking-tight mb-3">
+          <h2 className="text-2xl sm:text-4xl md:text-6xl font-light tracking-tight mb-3">
             Battle Fronts
           </h2>
 
-          <p className="text-base sm:text-lg md:text-xl text-gray-300">
+          <p className="text-sm sm:text-lg md:text-xl text-gray-300">
             Select your division and deploy your expertise
           </p>
         </div>
