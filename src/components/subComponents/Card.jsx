@@ -37,7 +37,7 @@ const cardData = [
   },
   {
     icon: <Lightbulb />,
-    title: "Innovation",
+    title: "Open Innovation",
     desc: "Creative Nebula",
     number: "04",
     tagline: "Innovate without boundaries",
