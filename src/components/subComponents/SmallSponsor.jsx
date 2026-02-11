@@ -1,4 +1,3 @@
-
 // This one is nice but rotation speed jyada hai
 // for small sponsors
 
@@ -11,14 +10,7 @@ import {
   cleanupScrollTriggers,
 } from "@/lib/gsap-utils";
 import Image from "next/image";
-
-const sponsors = [
-  { tier: "India Blockchain Week 2024", image: "/sponsors/ibw.svg", id: "NAV-01" },
-  { tier: "Devfolio", image: "/sponsors/Devfolio.png", id: "NAV-02" },
-  { tier: "QuillAudits", image: "/sponsors/QuillAudit.webp", id: "NAV-03" },
-  { tier: "ETHIndia", image: "/sponsors/ethindia-logo.svg", id: "NAV-04" },
-  { tier: "Polygon", image: "/sponsors/polygon.svg", id: "NAV-05" },
-];
+import { sponsorsData } from "@/lib/data/data";
 
 const SmallSponsor = () => {
   const sectionRef = useRef(null);
@@ -31,7 +23,10 @@ const SmallSponsor = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative py-40 bg-black text-white overflow-hidden">
+    <section
+      ref={sectionRef}
+      className="relative py-40 bg-black text-white overflow-hidden"
+    >
       {/* Background */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] border border-white/5 rounded-full pointer-events-none" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] border border-white/10 rounded-full pointer-events-none" />
@@ -40,7 +35,9 @@ const SmallSponsor = () => {
         <div className="flex flex-col items-center mb-28">
           <div className="flex items-center gap-4 mb-4">
             <div className="h-[1px] w-12 bg-blue-500/50" />
-            <span className="text-blue-500 font-mono text-[10px] tracking-[0.5em] uppercase">Sector Alpha // Sponsors</span>
+            <span className="text-blue-500 font-mono text-[10px] tracking-[0.5em] uppercase">
+              Sector Alpha // Sponsors
+            </span>
             <div className="h-[1px] w-12 bg-blue-500/50" />
           </div>
           <h2 className="text-5xl md:text-7xl font-extralight tracking-tighter uppercase italic">
@@ -49,7 +46,7 @@ const SmallSponsor = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
-          {sponsors.map((sponsor, i) => (
+          {sponsorsData.map((sponsor, i) => (
             <div
               key={i}
               ref={(el) => (cardsRef.current[i] = el)}
@@ -61,14 +58,16 @@ const SmallSponsor = () => {
 
               <Card className="relative h-full bg-white/[0.02] border border-white/10 rounded-none transition-all duration-500 group-hover:bg-blue-500/[0.05] group-hover:border-blue-500/50">
                 <CardContent className="p-8 flex flex-col items-center justify-between min-h-[300px]">
-                  
                   <span className="self-start font-mono text-[9px] text-white/30 group-hover:text-blue-400 transition-colors">
                     {sponsor.id}
                   </span>
 
-                  <div 
+                  <div
                     className="relative w-32 h-30 bg-white/5 flex items-center justify-center transition-transform duration-700 group-hover:rotate-[360deg]"
-                    style={{ clipPath: "polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)" }}
+                    style={{
+                      clipPath:
+                        "polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)",
+                    }}
                   >
                     <div className="relative w-25 h-25">
                       <Image
@@ -81,7 +80,9 @@ const SmallSponsor = () => {
                   </div>
 
                   <div className="w-full text-center mt-6">
-                    <p className="text-[10px] font-mono tracking-widest text-white/40 mb-1 group-hover:text-blue-300">AUTHORIZED ENTITY</p>
+                    <p className="text-[10px] font-mono tracking-widest text-white/40 mb-1 group-hover:text-blue-300">
+                      AUTHORIZED ENTITY
+                    </p>
                     <h3 className="text-xs font-bold tracking-widest uppercase leading-tight">
                       {sponsor.tier}
                     </h3>
@@ -98,8 +99,12 @@ const SmallSponsor = () => {
 
       <style jsx>{`
         @keyframes scan {
-          0% { transform: translateY(-100%); }
-          100% { transform: translateY(400%); }
+          0% {
+            transform: translateY(-100%);
+          }
+          100% {
+            transform: translateY(400%);
+          }
         }
       `}</style>
     </section>
@@ -107,12 +112,3 @@ const SmallSponsor = () => {
 };
 
 export default SmallSponsor;
-   
-
-
-
-
-
-
-
-

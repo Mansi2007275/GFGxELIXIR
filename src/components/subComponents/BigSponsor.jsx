@@ -9,14 +9,7 @@ import {
   cleanupScrollTriggers,
 } from "@/lib/gsap-utils";
 import Image from "next/image";
-
-const sponsors = [
-  { tier: "India Blockchain Week 2024", image: "/sponsors/ibw.svg", glow: "from-blue-500/20" },
-  { tier: "Devfolio", image: "/sponsors/Devfolio.png", glow: "from-cyan-500/20" },
-  { tier: "QuillAudits", image: "/sponsors/QuillAudit.webp", glow: "from-purple-500/20" },
-  { tier: "ETHIndia", image: "/sponsors/ethindia-logo.svg", glow: "from-pink-500/20" },
-  { tier: "Polygon", image: "/sponsors/polygon.svg", glow: "from-indigo-500/20" },
-];
+import { sponsorsData } from "@/lib/data/data";
 
 const BigSponsor = () => {
   const sectionRef = useRef(null);
@@ -42,7 +35,7 @@ const BigSponsor = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 justify-center">
-          {sponsors.map((sponsor, i) => (
+          {sponsorsData.map((sponsor, i) => (
             <div
               key={i}
               ref={(el) => (cardsRef.current[i] = el)}

@@ -97,3 +97,92 @@ export const faqs = [
     a: "The hackathon will be hybrid — both online and offline options are available. Join us at the venue or remotely.",
   },
 ];
+
+export const timelineData = [
+    {
+      title: "15 February",
+      content: (
+        <div>
+          <p className="mb-4 text-xs font-normal text-white/80 md:text-sm">
+            Registration Opens
+          </p>
+          <p className="text-xs text-white/60 md:text-sm">
+            Sign up starts now! Get ready for an amazing hackathon experience.
+          </p>
+        </div>
+      ),
+    },
+    {
+      title: "15 March",
+      content: (
+        <div>
+          <p className="mb-4 text-xs font-normal text-white/80 md:text-sm">
+            Registration Closed
+          </p>
+          <p className="text-xs text-white/60 md:text-sm">
+            Registration is now closed. Stay tuned for updates and announcements!
+          </p>
+        </div>
+      ),
+    },
+    // {
+    //   title: "Feb 1",
+    //   content: (
+    //     <div>
+    //       <p className="mb-4 text-xs font-normal text-white/80 md:text-sm">
+    //         Deadline Extended
+    //       </p>
+    //       <p className="text-xs text-white/60 md:text-sm">
+    //         Last chance to register! Don't miss this opportunity.
+    //       </p>
+    //     </div>
+    //   ),
+    // },
+    {
+      title: "28 March",
+      content: (
+        <div>
+          <p className="mb-4 text-xs font-normal text-white/80 md:text-sm">
+            Hackathon Begins
+          </p>
+          <p className="text-xs text-white/60 md:text-sm">
+            Coding, innovation, and collaboration starts now!
+          </p>
+        </div>
+      ),
+    },
+    {
+      title: "29 March",
+      content: (
+        <div>
+          <p className="mb-4 text-xs font-normal text-white/80 md:text-sm">
+            Submissions Due
+          </p>
+          <p className="text-xs text-white/60 md:text-sm">
+            Final demos presented. Show us what you&apos;ve built!
+          </p>
+        </div>
+      ),
+    },
+    {
+      title: "29 March",
+      content: (
+        <div>
+          <p className="mb-4 text-xs font-normal text-white/80 md:text-sm">
+            Results & Awards
+          </p>
+          <p className="text-xs text-white/60 md:text-sm">
+            Winners announced! Celebrate the amazing projects and innovations.
+          </p>
+        </div>
+      ),
+    },
+  ];
+
+export const sponsorsData = [
+    { tier: "India Blockchain Week 2024", image: "/sponsors/ibw.svg", glow: "from-blue-500/20" },
+    { tier: "Devfolio", image: "/sponsors/Devfolio.png", glow: "from-cyan-500/20" },
+    { tier: "QuillAudits", image: "/sponsors/QuillAudit.webp", glow: "from-purple-500/20" },
+    { tier: "ETHIndia", image: "/sponsors/ethindia-logo.svg", glow: "from-pink-500/20" },
+    { tier: "Polygon", image: "/sponsors/Polygon.svg", glow: "from-indigo-500/20" },
+  ];
