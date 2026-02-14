@@ -72,14 +72,6 @@ const Hero = () => {
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mt-4 w-full sm:w-auto px-2">
           <Button
             size="lg"
-            className="bg-black/80 text-white hover:bg-black px-6 sm:px-10 py-5 sm:py-7 text-base sm:text-lg font-semibold tracking-wide"
-          >
-            <Target className="mr-2 w-4 h-4 sm:w-5 sm:h-5" />
-            Join The Scout Regiment
-          </Button>
-
-          <Button
-            size="lg"
             variant="outline"
             className="border-2 border-white text-white hover:bg-white px-6 sm:px-10 py-5 sm:py-6 text-base sm:text-lg font-semibold tracking-wide"
             onClick={() => {
@@ -92,11 +84,12 @@ const Hero = () => {
 
           <Button
             size="lg"
-            className="bg-black/80 text-white hover:bg-black px-6 sm:px-10 py-5 sm:py-7 text-base sm:text-lg font-semibold tracking-wide border border-white/10"
-            onClick={() => window.open('https://www.elixircommunity.in/', '_blank')}
+            variant="outline"
+            className="border-2 border-white text-white hover:bg-white px-6 sm:px-10 py-5 sm:py-6 text-base sm:text-lg font-semibold tracking-wide"
+            onClick={() => window.open('https://registration.example.com', '_blank')}
           >
-            <ExternalLink className="mr-2 w-4 h-4 sm:w-5 sm:h-5" />
-            Elixir Website
+            <Target className="mr-2 w-4 h-4 sm:w-5 sm:h-5" />
+            Register Now
           </Button>
         </div>
 

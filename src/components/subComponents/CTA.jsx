@@ -91,8 +91,9 @@ const CTA = () => {
           <Button
             size="lg"
             className="bg-white text-black hover:bg-gray-200 px-10 py-7 text-lg font-semibold transform hover:scale-105 transition-all duration-300"
+            onClick={() => window.open('https://registration.example.com', '_blank')}
           >
-            Enlist Now
+            Register Now
           </Button>
           <a href="https://discord.gg/yTxvuuktdZ" target="blank">
           <Button
